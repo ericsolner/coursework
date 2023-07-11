@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Debugging Example</title>
+</head>
+<body>
+    <script type="text/JavaScript">
+        function mystery(num, shift) {
+            return num<<shift; // BONUS: What does this do?
+        }
+
+        function sumArray(array) {
+            var sum = 0;
+
+            for (let i = 0; i < array.length; i++) {
+                // this is equivalent to sum = sum + array[i]
+                sum+=array[i];
+            }
+            return sum;
+        }
+        // String interpolation, you can put any valid expression in the ${...}
+        console.log(`Mystery Output => ${mystery(2, 1)}`); 
+        console.log("---------------");
+        var array = [1, 2, 3, 4, 5];
+        console.log(`sumArray Output => ${sumArray(array)}`);
+    </script>
+</body>
+</html>
